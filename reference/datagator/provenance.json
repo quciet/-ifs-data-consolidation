@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/quciet/datagator_flask_mongo",
+  "commit": "561e371805d032236825f03dea06621ab33ab132",
+  "path": "data/country_data.json",
+  "upstream_blob_sha": "e7f8e08d16494b60cb79c1a32370aba4a68e54df",
+  "local_sha256": "7128f7c9acf26761792df74cad5309088b808f0092c50aeb6b4ff271ffaead5e",
+  "retrieved_at": "2026-09-08",
+  "representation": "JSON minified locally; country records and aliases preserved",
+  "countries": 188,
+  "alternative_name_entries": 567,
+  "normalized_lookup_keys": 754
+}

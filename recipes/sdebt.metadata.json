@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "purpose": "Source-specific metadata overrides for raw SDebt preparation; not a consolidation recipe.",
+  "reference_file": "IFsDataImport_SDebt_ddfilled.db",
+  "reference_sha256": "2f3aeb534510c0d4d1f799638a2622cddc4f3a7a8c2da6b2539ed2391b989911",
+  "tables": {
+    "SeriesDebt%GDPPFMH": {
+      "Group": "Government",
+      "SubGroup": "Finance",
+      "Series": "Yes",
+      "CoVaTrA": "No",
+      "Cohort": "No",
+      "Extended Source Defn": null,
+      "Units": "Percent",
+      "Aggregation": "GDP",
+      "TreatNullsAs0s": 0,
+      "Proprietary": 0,
+      "Code in Source": null,
+      "Decimal Places": 8,
+      "Country Concordance": "IFs Country",
+      "Formula": null
+    },
+    "SeriesInterest%GDPPFMH": {
+      "Group": "Government",
+      "SubGroup": "Finance",
+      "Series": "Yes",
+      "CoVaTrA": "No",
+      "Cohort": "No",
+      "Extended Source Defn": null,
+      "Units": "Percent",
+      "Aggregation": "GDP",
+      "TreatNullsAs0s": 0,
+      "Proprietary": 0,
+      "Code in Source": null,
+      "Decimal Places": 8,
+      "Country Concordance": "IFs Country",
+      "Formula": null
+    },
+    "SeriesSDRAllocation": {
+      "Group": "Government",
+      "SubGroup": "Finance",
+      "Series": "Yes",
+      "CoVaTrA": "No",
+      "Cohort": "No",
+      "Extended Source Defn": null,
+      "CURRENCY": null,
+      "Aggregation": "SUM",
+      "TreatNullsAs0s": 0,
+      "Proprietary": 0,
+      "Decimal Places": 8,
+      "Country Concordance": "IFs Country",
+      "Formula": null
+    }
+  }
+}

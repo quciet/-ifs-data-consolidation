@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "kind": "validation_policy_design_template",
+  "executable_by_current_cli": false,
+  "scope": {
+    "source_release": null,
+    "input_sha256": null,
+    "tables": [],
+    "baseline_datadict_sha256": null
+  },
+  "normalization": {
+    "numeric_text": "unambiguous_decimal_to_IFs_numeric",
+    "number_format": "strict_ASCII_decimal_scientific_no_grouping",
+    "overflow_underflow_or_unacceptable_precision_loss": "unresolved",
+    "infinity": "sql_null_with_original_evidence",
+    "blank_observations": "sql_null_with_original_evidence",
+    "zero": "preserve",
+    "monadic_surplus_rows": "exclude_with_full_raw_audit_only_after_complete_unique_source_roster",
+    "other_missing_tokens": [],
+    "unit_label": "exact_baseline_label_when_equivalence_established",
+    "unit_equivalence_decisions": []
+  },
+  "repull_assessment": {
+    "required": true,
+    "evidence": [],
+    "decision": "not_assessed",
+    "reason": null
+  }
+}

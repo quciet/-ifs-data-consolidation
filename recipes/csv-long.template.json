@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "source-name-indicator-family",
+  "status": "draft",
+  "adapter": "csv_long",
+  "kind": "monadic",
+  "merge_policy": "prefer_new_non_null",
+  "expected_country_count": 188,
+  "large_revision_fraction": 0.5,
+  "missing_values": ["", ".."],
+  "ignored_indicators": [],
+  "ignored_country_codes": [],
+  "columns": {"country": "Country Code", "indicator": "Indicator Code", "year": "Year", "value": "Value", "unit": "Unit"},
+  "indicators": {
+    "SOURCE_INDICATOR_CODE": {
+      "table": "SeriesTargetName",
+      "input_unit": "source unit",
+      "multiplier": 1,
+      "metadata": {"Variable": "TargetName", "Definition": "Exact indicator definition", "Units": "IFs output unit", "Source": "Source name"}
+    }
+  }
+}

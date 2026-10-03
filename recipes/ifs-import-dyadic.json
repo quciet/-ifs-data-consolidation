@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "ifs-import-dyadic",
+  "status": "active",
+  "adapter": "ifs_sqlite",
+  "kind": "dyadic",
+  "merge_policy": "prefer_new_non_null",
+  "expected_country_count": null,
+  "tables": null,
+  "large_revision_fraction": 0.5,
+  "allow_unit_change": false,
+  "allow_coverage_loss": false,
+  "description": "Prepared Actor/Actor_FIPS/Partner/Partner_FIPS import. Configure a matching dyadic baseline pair before running.",
+  "missing_values": [
+    ""
+  ],
+  "missing_numeric_values": [],
+  "validation": {
+    "allow_partial_countries": false,
+    "defaults": {
+      "frequency_years": 1,
+      "jump_fraction": 0.5,
+      "revision_fraction": 0.5
+    }
+  }
+}

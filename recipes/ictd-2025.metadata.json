@@ -1,0 +1,210 @@
+{
+  "source_release": "UNU-WIDER Government Revenue Dataset 2025",
+  "preparation_date": "2026/09/22",
+  "source_sha256": {
+    "DataDict ICTD_Old 20260921.xlsx": "5f38cd95f884922cadb0833e8f22602dd68eb4e8c8de58b469fac0a6d92358e4",
+    "GRD_User_Guide_2025.pdf": "59ae449c7dbd4e710b6baa477ee73b79227c9c695ef2e93916edff3e898b28a3",
+    "IFsFrame.xlsx": "ef11ab59def3ddddb9545f0b08c82728a7b05dd155cff82d79e4817a8eefc127",
+    "UNUWIDERGRD_2025.xlsx": "6df16d84a3c2e53f99fabebb32bebaf944fb084fd85ce70f9aa7f2c6ae59ae30",
+    "UNUWIDERGRD_2025_Country_List.csv": "858e2fc3432f636eba6083806c097210d31c4e6cc38304fa62443b9361987e46",
+    "UNUWIDERGRD_2025_Gen_Short.xlsx": "81d1f9ed484e0b37f83ea0c8165b9cbe0fc67a7e10cbd7f2a31b1e88a56c57f8"
+  },
+  "name_overrides": {
+    "Azerbaijan, Rep. of": "AZE",
+    "China, P.R.: Mainland": "CHN",
+    "China, P.R.: Hong Kong": "HKG",
+    "Kosovo, Rep. of": "KSV",
+    "Moldova, Rep. of": "MDA",
+    "North Macedonia, Republic of": "MKD",
+    "Türkiye": "TUR"
+  },
+  "excluded_names": [
+    "Antigua and Barbuda",
+    "Curaçao",
+    "Dominica",
+    "Liechtenstein",
+    "China, P.R.: Macao",
+    "Nauru",
+    "Palau, Rep. of",
+    "San Marino, Rep. of",
+    "Sint Maarten",
+    "Aruba",
+    "Anguilla",
+    "Saint Kitts and Nevis",
+    "St Kitts & Nevis",
+    "Macao, China",
+    "Marshall Islands",
+    "Montserrat",
+    "Palau",
+    "San Marino",
+    "Tuvalu"
+  ],
+  "ifs_to_iso": {
+    "ZAR": "COD",
+    "MNG": "MNE",
+    "MON": "MNG",
+    "ROM": "ROU",
+    "YUG": "SRB",
+    "TMP": "TLS"
+  },
+  "identity_review": "Name aliases checked against supplied country-list mappings, pinned DataGator and source ISO/identifier. Azerbaijan and Cote dIvoire spelling variants occupy disjoint years with the same ISO. General ETH1980 is an audited row-specific name correction. No territorial arithmetic.",
+  "approved_error_cells": [
+    [
+      "General",
+      "Madagascar",
+      1993,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      1994,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      1995,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      1996,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      1997,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      1998,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      1999,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      2000,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      2001,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      2002,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      2003,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      2004,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      2005,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      2006,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      2007,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      2008,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      2009,
+      "BC"
+    ],
+    [
+      "General",
+      "Madagascar",
+      2010,
+      "BC"
+    ],
+    [
+      "Central",
+      "Pakistan",
+      2021,
+      "AI"
+    ],
+    [
+      "Central",
+      "Pakistan",
+      2021,
+      "AJ"
+    ],
+    [
+      "Central",
+      "Pakistan",
+      2022,
+      "AI"
+    ],
+    [
+      "Central",
+      "Pakistan",
+      2022,
+      "AJ"
+    ],
+    [
+      "Central",
+      "Pakistan",
+      2023,
+      "AI"
+    ],
+    [
+      "Central",
+      "Pakistan",
+      2023,
+      "AJ"
+    ]
+  ],
+  "error_authorization": "User 2026-09-22: Treat these Excel errors as missing (SQL NULL), preserve each original error in the audit, and flag the gaps.",
+  "metadata_reasons": {
+    "Definition": "Explicit source column hierarchy; baseline comparison resolves legacy abbreviated names and social-contribution variants.",
+    "Extended Source Defn": "Supplied GRD Info & Documentation, rows 23-27; supplied GRD User Guide 2025, pages 3-6.",
+    "Years": "First and last years with numeric prepared observations, table-specific.",
+    "Source": "Official GRD 2025 citation, https://www.wider.unu.edu/database/data-and-resources-grd",
+    "Original Source": "Official dataset release DOI; underlying country sources preserved with source rows.",
+    "Notes": "Supplied GRD guide and workbook caveats; known approved error gaps. Removes obsolete preparer initials only.",
+    "Last IFs Update": "Actual preparation date; does not represent source release date.",
+    "Name in Source": "Expanded source header hierarchy identifies inclusions/exclusions.",
+    "Country Concordance": "Selected IFs 8.73 canonical roster, checked against IFsFrame.xlsx and pinned DataGator.",
+    "Formula": "Source cell number format 0.00% stores fractions; target Units Percent stores percentage points. Multiply by 100 without rounding."
+  }
+}

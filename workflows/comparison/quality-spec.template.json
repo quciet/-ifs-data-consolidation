@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "tables": ["SeriesExample"],
+  "datasets": [
+    {"id": "base", "role": "base", "path": "BASE/IFsHistSeries.db", "metadata": "BASE/DataDict.db"},
+    {"id": "source-release", "role": "incoming", "path": "IFsDataImport_Example.db"}
+  ],
+  "settings": {
+    "defaults": {"aggregation": "unknown", "frequency_years": 1},
+    "tables": {"SeriesExample": {"jump_fraction": 0.5}}
+  }
+}

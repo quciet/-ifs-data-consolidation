@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "stages": [
+    {
+      "id": "preprocessing",
+      "title": "Data preprocessing",
+      "runbook": "preprocessing/WORKFLOW.md",
+      "purpose": "Prepare requested indicators from supplied files, using the base for documented inference and defaulting outputs inside the source folder. Online fetching requires explicit instruction.",
+      "next_stage": "validation",
+      "current_commands": [
+        "inspect",
+        "concordance",
+        "scripts/prepare_sdebt.py (source-specific)",
+        "scripts/prepare_ictd.py (source-specific)"
+      ],
+      "implementation": [
+        "scripts/prepare_sdebt.py",
+        "src/ifs_pipeline/adapters.py",
+        "src/ifs_pipeline/concordance.py",
+        "scripts/prepare_ictd.py",
+        "src/ifs_pipeline/preparation_paths.py"
+      ],
+      "extension_points": [
+        "Source-specific CSV/Excel/PDF adapters",
+        "Complete metadata profiles and extraction verification"
+      ]
+    },
+    {
+      "id": "validation",
+      "title": "Import validation and repair",
+      "runbook": "validation/WORKFLOW.md",
+      "purpose": "Normalize supported formatting, verify imports and route source problems before consolidation.",
+      "next_stage": "merger",
+      "current_commands": [
+        "repair-imports",
+        "repair-verify",
+        "quality-evidence",
+        "quality-verify"
+      ],
+      "implementation": [
+        "src/ifs_pipeline/repair.py",
+        "src/ifs_pipeline/normalization.py",
+        "src/ifs_pipeline/diagnostics.py",
+        "src/ifs_pipeline/quality.py"
+      ],
+      "extension_points": [
+        "Source-supported unit synonyms beyond case/whitespace",
+        "Source-specific semantic metadata review and repull assessment"
+      ]
+    },
+    {
+      "id": "merger",
+      "title": "Data merger",
+      "runbook": "merger/WORKFLOW.md",
+      "purpose": "Consolidate selected frozen imports into a versioned database pair with exact-source provenance.",
+      "next_stage": "comparison",
+      "current_commands": [
+        "delivery-prepare",
+        "delivery-merge",
+        "delivery-discard"
+      ],
+      "implementation": [
+        "src/ifs_pipeline/delivery.py",
+        "src/ifs_pipeline/delivery_core.py"
+      ],
+      "extension_points": [
+        "Link validation handoffs to registered batches without changing merge semantics"
+      ]
+    },
+    {
+      "id": "comparison",
+      "title": "Post-merge comparison",
+      "runbook": "comparison/WORKFLOW.md",
+      "purpose": "Verify and explain updated series and metadata using base, incoming and merged evidence.",
+      "next_stage": null,
+      "current_commands": [
+        "delivery-compare",
+        "delivery-logs",
+        "delivery-quality",
+        "quality-review",
+        "Generated Consolidation Report/report.md and run CSVs"
+      ],
+      "implementation": [
+        "src/ifs_pipeline/delivery_report.py",
+        "src/ifs_pipeline/quality.py",
+        "src/ifs_pipeline/quality_report.py",
+        "src/ifs_pipeline/diagnostics.py",
+        "src/ifs_pipeline/delivery.py"
+      ],
+      "extension_points": [
+        "Extend statistical evidence to weighted rates and dyadic semantics",
+        "Source-specific screens and concise issue routing"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "id": "janitor",
+      "title": "Consolidation Report janitor",
+      "runbook": "janitor/WORKFLOW.md",
+      "current_commands": [
+        "delivery-clean"
+      ],
+      "implementation": [
+        "src/ifs_pipeline/janitor.py"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1056 @@
+{
+  "schema_version": 1,
+  "source_id": "climatewatch",
+  "release": "Climate Watch Historical GHG Emissions 2026; January 2026 update; 1990-2023",
+  "preparation_date": "2026/09/22",
+  "scope_workbook": "DataDict ClimateWatch_old 20260922.xlsx",
+  "source_sha256": {
+    "ClimateWatch_AllData.zip": "f3e7648917ff2ed818e87e4d2f75affdf82ff75a6db190cae7673f1b66051404",
+    "ClimateWatch_HistoricalEmissions.zip": "ebb8d0718ef039d90bc4371f1faa756e5da0601330d90b3f465de0990f787685",
+    "CW_HistoricalEmissions_ClimateWatch.csv": "822cd04bf321913fa3fd2cf1988104f955b5a7fa30a529a3cd62c6b9771dd6ba",
+    "DataDict ClimateWatch_old 20260922.xlsx": "8e434eb1895c5cd4531e96ae10988777937388731e4219824c5cbe04bcc4854a",
+    "metadata.csv": "ab714d342775ab3f59f05742d82d9aec2eb3d7647be9f3fdbd163fb4b862134c"
+  },
+  "base_sha256": {
+    "D:\\IFsHistSeries\\IFsHistSeries 8.73 20260814\\DataDict.db": "915d89c1c8cd88aee1192b70ff9d438f440073699ebe67ddeaa663166cf1dee5",
+    "D:\\IFsHistSeries\\IFsHistSeries 8.73 20260814\\IFsHistSeries.db": "85aa514486320e8c059a6e0f22de96ee76e35e1f6bf3b4f1737653355da2cbee"
+  },
+  "lookup_sha256": "7128f7c9acf26761792df74cad5309088b808f0092c50aeb6b4ff271ffaead5e",
+  "reviewed_name_spellings": {
+    "Korea, Dem. Peopleâ€™s Rep.": "Korea, Dem. People's Republic"
+  },
+  "excluded_entities": {
+    "AND": "Andorra",
+    "ATG": "Antigua and Barbuda",
+    "COK": "Cook Islands",
+    "DMA": "Dominica",
+    "EUU": "European Union ",
+    "KNA": "St. Kitts and Nevis",
+    "LIE": "Liechtenstein",
+    "MCO": "Monaco",
+    "MHL": "Marshall Islands",
+    "NIU": "Niue",
+    "NRU": "Nauru",
+    "PLW": "Palau",
+    "SMR": "San Marino",
+    "TUV": "Tuvalu",
+    "VAT": "Holy See (Vatican City State)",
+    "WORLD": "World"
+  },
+  "tables": [
+    {
+      "table": "SeriesEmissionsCH4AgricultureCW",
+      "variable": "EmissionsCH4AgricultureCW",
+      "gas": "CH4",
+      "sector": "Agriculture",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Agriculture.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying source: FAO 2025, FAOSTAT Emissions Database. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Agriculture"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCH4BuildingCW",
+      "variable": "EmissionsCH4BuildingCW",
+      "gas": "CH4",
+      "sector": "Building",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Building.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Building"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCH4BunkerFuelsCW",
+      "variable": "EmissionsCH4BunkerFuelsCW",
+      "gas": "CH4",
+      "sector": "Bunker Fuels",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Bunker Fuels.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Bunker Fuels"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCH4ElectHeatCW",
+      "variable": "EmissionsCH4ElectHeatCW",
+      "gas": "CH4",
+      "sector": "Electricity/Heat",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Electricity/Heat.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Electricity/Heat"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCH4EnergyCW",
+      "variable": "EmissionsCH4EnergyCW",
+      "gas": "CH4",
+      "sector": "Energy",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Energy.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Energy"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCH4FugitEmissionCW",
+      "variable": "EmissionsCH4FugitEmissionCW",
+      "gas": "CH4",
+      "sector": "Fugitive Emissions",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Fugitive Emissions.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Fugitive Emissions"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCH4IndProcessCW",
+      "variable": "EmissionsCH4IndProcessCW",
+      "gas": "CH4",
+      "sector": "Industrial Processes",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Industrial Processes.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Industrial Processes"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCH4LandUseCW",
+      "variable": "EmissionsCH4LandUseCW",
+      "gas": "CH4",
+      "sector": "Land Use, Land-Use Change and Forestry",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Land Use, Land-Use Change and Forestry.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying source: FAO 2025, FAOSTAT Emissions Database. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Includes land-use emissions and removals; negative net emissions are retained. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Land Use, Land-Use Change and Forestry"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCH4ManuConstrCW",
+      "variable": "EmissionsCH4ManuConstrCW",
+      "gas": "CH4",
+      "sector": "Manufacturing/Construction",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Manufacturing/Construction.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Manufacturing/Construction"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCH4OtherFuelCW",
+      "variable": "EmissionsCH4OtherFuelCW",
+      "gas": "CH4",
+      "sector": "Other Fuel Combustion",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Other Fuel Combustion.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Other Fuel Combustion"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCH4TransportationCW",
+      "variable": "EmissionsCH4TransportationCW",
+      "gas": "CH4",
+      "sector": "Transportation",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Transportation.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Transportation"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCH4WasteCW",
+      "variable": "EmissionsCH4WasteCW",
+      "gas": "CH4",
+      "sector": "Waste",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Waste.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Waste"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCO2BuildingCW",
+      "variable": "EmissionsCO2BuildingCW",
+      "gas": "CO2",
+      "sector": "Building",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CO2 emissions: Building.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CO2; Building"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCO2BunkerFuelsCW",
+      "variable": "EmissionsCO2BunkerFuelsCW",
+      "gas": "CO2",
+      "sector": "Bunker Fuels",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CO2 emissions: Bunker Fuels.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CO2; Bunker Fuels"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCO2ElectHeatCW",
+      "variable": "EmissionsCO2ElectHeatCW",
+      "gas": "CO2",
+      "sector": "Electricity/Heat",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CO2 emissions: Electricity/Heat.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CO2; Electricity/Heat"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCO2EnergyCW",
+      "variable": "EmissionsCO2EnergyCW",
+      "gas": "CO2",
+      "sector": "Energy",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CO2 emissions: Energy.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CO2; Energy"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCO2FugitEmissionCW",
+      "variable": "EmissionsCO2FugitEmissionCW",
+      "gas": "CO2",
+      "sector": "Fugitive Emissions",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CO2 emissions: Fugitive Emissions.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CO2; Fugitive Emissions"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCO2IndProcessCW",
+      "variable": "EmissionsCO2IndProcessCW",
+      "gas": "CO2",
+      "sector": "Industrial Processes",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CO2 emissions: Industrial Processes.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CO2; Industrial Processes"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCO2LandUseCW",
+      "variable": "EmissionsCO2LandUseCW",
+      "gas": "CO2",
+      "sector": "Land Use, Land-Use Change and Forestry",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CO2 emissions: Land Use, Land-Use Change and Forestry.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying source: FAO 2025, FAOSTAT Emissions Database. Includes land-use emissions and removals; negative net emissions are retained. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CO2; Land Use, Land-Use Change and Forestry"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCO2ManuConstrCW",
+      "variable": "EmissionsCO2ManuConstrCW",
+      "gas": "CO2",
+      "sector": "Manufacturing/Construction",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CO2 emissions: Manufacturing/Construction.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CO2; Manufacturing/Construction"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCO2OtherFuelCW",
+      "variable": "EmissionsCO2OtherFuelCW",
+      "gas": "CO2",
+      "sector": "Other Fuel Combustion",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CO2 emissions: Other Fuel Combustion.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CO2; Other Fuel Combustion"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCO2TotCW",
+      "variable": "EmissionsCO2TotCW",
+      "gas": "CO2",
+      "sector": "Total excluding LULUCF",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CO2 emissions: Total excluding LULUCF.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CO2; Total excluding LULUCF"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCO2WithLUCFCW",
+      "variable": "EmissionsCO2WithLUCFCW",
+      "gas": "CO2",
+      "sector": "Total including LULUCF",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CO2 emissions: Total including LULUCF.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Includes land-use emissions and removals; negative net emissions are retained. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CO2; Total including LULUCF"
+      }
+    },
+    {
+      "table": "SeriesEmissionsFgasTotCW",
+      "variable": "EmissionsFgasTotCW",
+      "gas": "F-Gas",
+      "sector": "Total excluding LULUCF",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "F-Gas emissions: Total excluding LULUCF.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "F-Gas; Total excluding LULUCF"
+      }
+    },
+    {
+      "table": "SeriesEmissionsFgasWithLUCFCW",
+      "variable": "EmissionsFgasWithLUCFCW",
+      "gas": "F-Gas",
+      "sector": "Total including LULUCF",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "F-Gas emissions: Total including LULUCF.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Includes land-use emissions and removals; negative net emissions are retained. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "F-Gas; Total including LULUCF"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OTotCW",
+      "variable": "EmissionsN2OTotCW",
+      "gas": "N2O",
+      "sector": "Total excluding LULUCF",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Total excluding LULUCF.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Total excluding LULUCF"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OWithLUCFCW",
+      "variable": "EmissionsN2OWithLUCFCW",
+      "gas": "N2O",
+      "sector": "Total including LULUCF",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Total including LULUCF.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Includes land-use emissions and removals; negative net emissions are retained. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Total including LULUCF"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGTotCW",
+      "variable": "EmissionsTotGHGTotCW",
+      "gas": "All GHG",
+      "sector": "Total excluding LULUCF",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Total excluding LULUCF.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Total excluding LULUCF"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGWithLUCFCW",
+      "variable": "EmissionsTotGHGWithLUCFCW",
+      "gas": "All GHG",
+      "sector": "Total including LULUCF",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Total including LULUCF.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Includes land-use emissions and removals; negative net emissions are retained. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Total including LULUCF"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCH4TotCW",
+      "variable": "EmissionsCH4TotCW",
+      "gas": "CH4",
+      "sector": "Total excluding LULUCF",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Total excluding LULUCF.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Total excluding LULUCF"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCH4WithLUCFCW",
+      "variable": "EmissionsCH4WithLUCFCW",
+      "gas": "CH4",
+      "sector": "Total including LULUCF",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CH4 emissions: Total including LULUCF.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Includes land-use emissions and removals; negative net emissions are retained. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CH4; Total including LULUCF"
+      }
+    },
+    {
+      "table": "SeriesEmissionsCO2TransportationCW",
+      "variable": "EmissionsCO2TransportationCW",
+      "gas": "CO2",
+      "sector": "Transportation",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "CO2 emissions: Transportation.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "CO2; Transportation"
+      }
+    },
+    {
+      "table": "SeriesEmissionsFgasIndProcessCW",
+      "variable": "EmissionsFgasIndProcessCW",
+      "gas": "F-Gas",
+      "sector": "Industrial Processes",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "F-Gas emissions: Industrial Processes.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "F-Gas; Industrial Processes"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OAgricultureCW",
+      "variable": "EmissionsN2OAgricultureCW",
+      "gas": "N2O",
+      "sector": "Agriculture",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Agriculture.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying source: FAO 2025, FAOSTAT Emissions Database. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Agriculture"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OBuildingCW",
+      "variable": "EmissionsN2OBuildingCW",
+      "gas": "N2O",
+      "sector": "Building",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Building.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Building"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OBunkerFuelsCW",
+      "variable": "EmissionsN2OBunkerFuelsCW",
+      "gas": "N2O",
+      "sector": "Bunker Fuels",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Bunker Fuels.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Bunker Fuels"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OElectHeatCW",
+      "variable": "EmissionsN2OElectHeatCW",
+      "gas": "N2O",
+      "sector": "Electricity/Heat",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Electricity/Heat.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Electricity/Heat"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OEnergyCW",
+      "variable": "EmissionsN2OEnergyCW",
+      "gas": "N2O",
+      "sector": "Energy",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Energy.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Energy"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OFugitEmissionCW",
+      "variable": "EmissionsN2OFugitEmissionCW",
+      "gas": "N2O",
+      "sector": "Fugitive Emissions",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Fugitive Emissions.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Fugitive Emissions"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OIndProcessCW",
+      "variable": "EmissionsN2OIndProcessCW",
+      "gas": "N2O",
+      "sector": "Industrial Processes",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Industrial Processes.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Industrial Processes"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OLandUseCW",
+      "variable": "EmissionsN2OLandUseCW",
+      "gas": "N2O",
+      "sector": "Land Use, Land-Use Change and Forestry",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Land Use, Land-Use Change and Forestry.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying source: FAO 2025, FAOSTAT Emissions Database. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Includes land-use emissions and removals; negative net emissions are retained. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Land Use, Land-Use Change and Forestry"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OManuConstrCW",
+      "variable": "EmissionsN2OManuConstrCW",
+      "gas": "N2O",
+      "sector": "Manufacturing/Construction",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Manufacturing/Construction.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Manufacturing/Construction"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OOtherFuelCW",
+      "variable": "EmissionsN2OOtherFuelCW",
+      "gas": "N2O",
+      "sector": "Other Fuel Combustion",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Other Fuel Combustion.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Other Fuel Combustion"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OTransportationCW",
+      "variable": "EmissionsN2OTransportationCW",
+      "gas": "N2O",
+      "sector": "Transportation",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Transportation.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Transportation"
+      }
+    },
+    {
+      "table": "SeriesEmissionsN2OWasteCW",
+      "variable": "EmissionsN2OWasteCW",
+      "gas": "N2O",
+      "sector": "Waste",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "N2O emissions: Waste.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "N2O; Waste"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGAgricultureCW",
+      "variable": "EmissionsTotGHGAgricultureCW",
+      "gas": "All GHG",
+      "sector": "Agriculture",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Agriculture.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying source: FAO 2025, FAOSTAT Emissions Database. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Agriculture"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGBuildingCW",
+      "variable": "EmissionsTotGHGBuildingCW",
+      "gas": "All GHG",
+      "sector": "Building",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Building.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Building"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGBunkerFuelsCW",
+      "variable": "EmissionsTotGHGBunkerFuelsCW",
+      "gas": "All GHG",
+      "sector": "Bunker Fuels",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Bunker Fuels.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Bunker Fuels"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGElectHeatCW",
+      "variable": "EmissionsTotGHGElectHeatCW",
+      "gas": "All GHG",
+      "sector": "Electricity/Heat",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Electricity/Heat.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Electricity/Heat"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGEnergyCW",
+      "variable": "EmissionsTotGHGEnergyCW",
+      "gas": "All GHG",
+      "sector": "Energy",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Energy.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Energy"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGFugitEmissionCW",
+      "variable": "EmissionsTotGHGFugitEmissionCW",
+      "gas": "All GHG",
+      "sector": "Fugitive Emissions",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Fugitive Emissions.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Fugitive Emissions"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGIndProcessCW",
+      "variable": "EmissionsTotGHGIndProcessCW",
+      "gas": "All GHG",
+      "sector": "Industrial Processes",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Industrial Processes.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Industrial Processes"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGLandUseCW",
+      "variable": "EmissionsTotGHGLandUseCW",
+      "gas": "All GHG",
+      "sector": "Land Use, Land-Use Change and Forestry",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Land Use, Land-Use Change and Forestry.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying source: FAO 2025, FAOSTAT Emissions Database. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Includes land-use emissions and removals; negative net emissions are retained. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Land Use, Land-Use Change and Forestry"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGManuConstrCW",
+      "variable": "EmissionsTotGHGManuConstrCW",
+      "gas": "All GHG",
+      "sector": "Manufacturing/Construction",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Manufacturing/Construction.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Manufacturing/Construction"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGOtherFuelCW",
+      "variable": "EmissionsTotGHGOtherFuelCW",
+      "gas": "All GHG",
+      "sector": "Other Fuel Combustion",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Other Fuel Combustion.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Other Fuel Combustion"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGTransportationCW",
+      "variable": "EmissionsTotGHGTransportationCW",
+      "gas": "All GHG",
+      "sector": "Transportation",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Transportation.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "Underlying fuel-combustion source: OECD/IEA, GHG Emissions from Fuel Combustion, 2025. AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Transportation"
+      }
+    },
+    {
+      "table": "SeriesEmissionsTotGHGWasteCW",
+      "variable": "EmissionsTotGHGWasteCW",
+      "gas": "All GHG",
+      "sector": "Waste",
+      "mapping_evidence": "Supplied old DataDict Definition and exact raw Gas/Sector labels; LUCF legacy naming corresponds to LULUCF in this release.",
+      "metadata_updates": {
+        "Definition": "All GHG emissions: Waste.",
+        "Extended Source Defn": "Climate Watch Historical GHG Emissions, January 2026 update. Non-CO2 gases use CO2 equivalents with IPCC AR5 100-year global warming potentials. LULUCF means land use, land-use change and forestry.",
+        "Years": "1990-2023",
+        "Source": "Climate Watch",
+        "Original Source": "https://www.climatewatchdata.org/ghg-emissions",
+        "Notes": "AR5 GWP basis introduced September 16, 2025; earlier IFs vintage may use a different basis. Historical geographic coverage follows the publisher.",
+        "Last IFs Update": "2026/09/22",
+        "Name in Source": "All GHG; Waste"
+      }
+    }
+  ],
+  "blank_field_reasons": {
+    "CURRENCY": "Emissions mass/equivalent, not currency.",
+    "Code in Source": "Raw source identifies series with Gas and Sector text, not a distinct indicator code; recorded in Name in Source.",
+    "UsedInPreprocessorFileName": "Matching base usage flag is 0 and no module is supplied.",
+    "Formula": "Direct values without arithmetic transformation; conversion of text storage is audited externally.",
+    "DisplayNotes": "Source caveats documented in Notes; no additional display instruction established."
+  },
+  "metadata_reasons": {
+    "Definition": "Exact gas/sector combination in supplied raw CSV; legacy identifiers retained.",
+    "Extended Source Defn": "Supplied metadata.csv historical_emissions_climate_watch row: January 2026 release and AR5 100-year GWP basis.",
+    "Years": "Raw year headers and observed source coverage, 1990-2023.",
+    "Source": "Dataset Source column and supplied metadata title; trimmed established source label.",
+    "Original Source": "Supplied metadata learn_more_link and citation; URL not fetched.",
+    "Notes": "Supplied metadata cautions and basis-change date; historic geography preserved, no territorial processing.",
+    "Last IFs Update": "Date of this preparation, distinct from January 2026 publisher update.",
+    "Name in Source": "Exact Gas and Sector labels in raw CSV.",
+    "Units": "Inferred scale continuity: supplied old DataDict and matching IFs 8.73 entries both identify this same dataset as million tonnes CO2 equivalent. New metadata confirms CO2-equivalent treatment but omits explicit million-tonne scale; raw CSV has no unit column. Copy unchanged, no scale conversion; overlap comparison is corroboration only. Preserve exact baseline unit wording, including its spelling.",
+    "Proprietary": "Preserve matching IFs base configuration 0. Local metadata license description/link conflict is an external unresolved source issue, not an inferred change to IFs access configuration."
+  },
+  "issues": [
+    {
+      "id": "gwp_vintage",
+      "scope": "Non-CO2 and All GHG tables",
+      "finding": "Current publisher metadata explicitly uses AR5 100-year GWP from September 16, 2025; base does not state its basis. Revisions cannot be attributed solely to GWP changes.",
+      "action": "Retain new release values; report vintage caveat; no conversion."
+    },
+    {
+      "id": "raw_scale_inference",
+      "scope": "All 57 tables",
+      "finding": "Inferred scale continuity: supplied old DataDict and matching IFs 8.73 entries both identify this same dataset as million tonnes CO2 equivalent. New metadata confirms CO2-equivalent treatment but omits explicit million-tonne scale; raw CSV has no unit column. Copy unchanged, no scale conversion; overlap comparison is corroboration only. Preserve exact baseline unit wording, including its spelling.",
+      "action": "Document supported inference; no rescaling."
+    },
+    {
+      "id": "license_conflict",
+      "scope": "Source metadata",
+      "finding": "summary_of_licenses says CC BY-NC 4.0; terms_of_service_link points to CC BY 4.0.",
+      "action": "Keep both source statements in frozen metadata; no online resolution or change to base Proprietary flag."
+    },
+    {
+      "id": "geography",
+      "scope": "Country coverage",
+      "finding": "Five canonical IFs entities absent; 16 source entities outside IFs roster. Historical country labels do not prove fixed boundaries.",
+      "action": "NULL padding and explicit exclusions with full original rows; no territorial arithmetic."
+    }
+  ]
+}

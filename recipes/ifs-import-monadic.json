@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "ifs-import-monadic",
+  "status": "active",
+  "adapter": "ifs_sqlite",
+  "kind": "monadic",
+  "merge_policy": "prefer_new_non_null",
+  "expected_country_count": 188,
+  "tables": null,
+  "large_revision_fraction": 0.5,
+  "allow_unit_change": false,
+  "allow_coverage_loss": false,
+  "description": "Already prepared IFs monadic import database with DataDict and Series tables. Not a parser for raw WDI/WPP downloads.",
+  "missing_values": [
+    ""
+  ],
+  "missing_numeric_values": [],
+  "validation": {
+    "allow_partial_countries": false,
+    "defaults": {
+      "frequency_years": 1,
+      "jump_fraction": 0.5,
+      "revision_fraction": 0.5
+    }
+  }
+}
